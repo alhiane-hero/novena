@@ -1,0 +1,94 @@
+/* start awards-page */
+.awards-page {
+    position: relative;
+    .heading-box {
+        width: 100%;
+        margin-bottom: 1.5rem !important;
+        @include largeQuery {
+            margin-bottom: 0 !important;
+        }
+    }
+    .imgs {
+        .awards-img {
+            height: 120px;
+            background-color: #eee;
+        }
+    }
+}
+/* end awards-page */
+
+/* start team */
+.team {
+    padding-bottom: 0;
+    @include largeQuery {
+        padding-bottom: 100px;
+    }
+}
+/* end team */
+
+/* start testimonial-page */
+.testimonial-page {
+    position: relative;
+    padding: 100px 0 130px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 48%;
+        height: 100%;
+        @include imgBg("../img/bg/bg-2.jpg");
+        display: none;
+        @include largeQuery {
+            display: block;
+        }
+    }
+    .col-lg-6 {
+        margin: 0;
+        @include largeQuery {
+            margin: 0 0 0 50%;
+        }
+    }
+    .relative {
+        position: relative;
+        .swiper3 {
+            width: 100%;
+            height: 263px;
+            margin-bottom: 0 !important;
+            overflow: hidden;
+            @include smallQuery {
+                height: 200px;
+            }
+            .swiper-slide {
+                display: block;
+                height: auto;
+                .client-info {
+                    margin-bottom: 1.5rem;
+                    h4 {
+                        font-family: "Exo", sans-serif;
+                        font-weight: 700;
+                        font-size: 1.3rem;
+                        color: #223a66;
+                    }
+                }
+            }
+        }
+        .swiper-pagination {
+            right: 50%;
+            transform: translateX(50%);
+            top: calc(100% + 30px);
+            .swiper-pagination-bullet {
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                margin: 0 7px !important;
+                background-color: black;
+                opacity: 0.25;
+                &.swiper-pagination-bullet-active {
+                    opacity: 0.7 !important;
+                }
+            }
+        }
+    }
+}
+/* end testimonial-page */

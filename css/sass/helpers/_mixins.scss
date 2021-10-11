@@ -1,0 +1,76 @@
+// media queries mixins:
+@mixin extraSmallQuery {
+    @media (max-width: $smallWidth) {
+        @content;
+    }
+}
+@mixin smallQuery {
+    @media (min-width: $smallWidth) {
+        @content;
+    }
+}
+@mixin mediumQuery {
+    @media (min-width: $mediumWidth) {
+        @content;
+    }
+}
+@mixin largeQuery {
+    @media (min-width: $largeWidth) {
+        @content;
+    }
+}
+@mixin xLargeQuery {
+    @media (min-width: $xLargeWidth) {
+        @content;
+    }
+}
+@mixin xxLargeQuery {
+    @media (min-width: $xxLargeWidth) {
+        @content;
+    }
+}
+
+// prefexer mixin:
+@mixin prefixer($property, $value, $prefixes: ()) {
+    @each $prefix in $prefixes {
+        #{'-' + $prefix + '-' + $property}: $value;
+    }
+    #{$property}: $value;
+}
+
+// overlay mixin:
+@mixin overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+// generatePadding gmixin:
+@mixin downUpPadding($val) {
+    padding: $val 0;
+}
+
+// animation mixin:
+@mixin keyFram($animtion-name) {
+    @-webkit-keyframes #{$animtion-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animtion-name} {
+        @content;
+    }
+    @-o-keyframes #{$animtion-name} {
+        @content;
+    }
+    @keyframes #{$animtion-name} {
+        @content;
+    }
+}
+
+// background image mixin:
+@mixin imgBg($img) {
+    background: url($img) center center no-repeat;
+    background-size: cover;
+}

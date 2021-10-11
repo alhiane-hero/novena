@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+/* start header */
+header .up-bar .email-adress-list li:not(:last-of-type) {
+  margin: 0 0 0 20px;
+}
+
+header .up-bar .email-adress-list li i {
+  margin: 0 0 0 5px;
+}
+
+@media (min-width: 992px) {
+  header .up-bar .call {
+    text-align: left;
+  }
+}
+
+header .bottom-bar .navbar-light .navbar-nav .nav-link {
+  letter-spacing: 0;
+}
+
+header .bottom-bar .dropdown-menu li .dropdown-item {
+  text-align: right;
+}
+
+/* end header */
+/* start banner */
+.banner .block h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/* end banner */
+/* start services */
+.services .service-item .head h3 {
+  padding: 0 20px 0 0;
+}
+
+/* end services */
+/* start testimonials */
+.testimonials .swiper .swiper-wrapper .swiper-slide .user .img {
+  margin: 0 0 0 0.7rem;
+}
+
+.testimonials .swiper .swiper-wrapper .swiper-slide i {
+  left: 46px;
+  right: 0;
+}
+
+/* end testimonials */
+/* start footer */
+footer .widget .footer-contact .flex i {
+  margin: 0 0 0 15px;
+}
+
+footer .footer-btm form button {
+  left: 6px;
+  right: initial;
+}
+
+/* end footer */
+/*# sourceMappingURL=home_page_rtl.css.map */

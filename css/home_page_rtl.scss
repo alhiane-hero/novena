@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+
+@import "./sass/helpers/variables";
+@import "./sass/helpers/functions";
+@import "./sass/helpers/mixins";
+
+$text-left: right;
+$text-right: left;
+
+body {
+    font: {
+        family: "Cairo", sans-serif;
+    }
+}
+
+/* start header */
+@import "./sass/layout/header_rtl";
+/* end header */
+
+/* start banner */
+.banner {
+    .block {
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+        }
+    }
+}
+/* end banner */
+
+/* start services */
+.services {
+    .service-item {
+        .head {
+            h3 {
+                padding: 0 20px 0 0;
+            }
+        }
+    }
+}
+/* end services */
+
+/* start testimonials */
+.testimonials {
+    .swiper {
+        .swiper-wrapper {
+            .swiper-slide {
+                .user {
+                    .img {
+                        margin: 0 0 0 0.7rem;
+                    }
+                }
+                i {
+                    left: 46px;
+                    right: 0;
+                }
+            }
+        }
+    }
+}
+/* end testimonials */
+
+/* start footer */
+@import "./sass/layout/footer_rtl";
+/* end footer */

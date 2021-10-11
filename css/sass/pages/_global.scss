@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: {
+        family: "Roboto", sans-serif;
+        size: $defaultFont;
+        weight: 400;
+    }
+    color: $textColor;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+}
+
+ul,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 30px;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+.divider {
+    width: 50px;
+    height: 5px;
+    background: $secondaryColor;
+}
+
+.section {
+    @include downUpPadding($sectionsPadding);
+}
+
+.center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

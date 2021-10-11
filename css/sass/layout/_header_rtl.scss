@@ -1,0 +1,33 @@
+header {
+    .up-bar {
+        .email-adress-list {
+            li {
+                &:not(:last-of-type) {
+                    margin: 0 0 0 20px;
+                }
+                i {
+                    margin: 0 0 0 5px;
+                }
+            }
+        }
+        .call {
+            @include largeQuery {
+                text-align: $text-right;
+            }
+        }
+    }
+    .bottom-bar {
+        .navbar-light {
+            .navbar-nav .nav-link {
+                letter-spacing: 0;
+            }
+        }
+        .dropdown-menu {
+            li {
+                .dropdown-item {
+                    text-align: $text-left;
+                }
+            }
+        }
+    }
+}

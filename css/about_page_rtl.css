@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap");
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+/* start header */
+header .up-bar .email-adress-list li:not(:last-of-type) {
+  margin: 0 0 0 20px;
+}
+
+header .up-bar .email-adress-list li i {
+  margin: 0 0 0 5px;
+}
+
+@media (min-width: 992px) {
+  header .up-bar .call {
+    text-align: left;
+  }
+}
+
+header .bottom-bar .navbar-light .navbar-nav .nav-link {
+  letter-spacing: 0;
+}
+
+header .bottom-bar .dropdown-menu li .dropdown-item {
+  text-align: right;
+}
+
+/* end header */
+/* start testimonial-page */
+.testimonial-page::before {
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  .testimonial-page .col-lg-6 {
+    margin: 0 50% 0 0;
+  }
+}
+
+/* end testimonial-page */
+/* start footer */
+footer .widget .footer-contact .flex i {
+  margin: 0 0 0 15px;
+}
+
+footer .footer-btm form button {
+  left: 6px;
+  right: initial;
+}
+
+/* end footer */
+/*# sourceMappingURL=about_page_rtl.css.map */

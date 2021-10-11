@@ -1,0 +1,20 @@
+/* start hero */
+.hero {
+    position: relative;
+    @include imgBg("../img/bg/22.jpg");
+    &::before {
+        content: "";
+        @include overlay;
+        background-color: #223a66 !important;
+        opacity: 0.9;
+    }
+    .text-block {
+        position: relative;
+        z-index: 2;
+    }
+    h1,
+    span {
+        color: $whiteColor;
+    }
+}
+/* end hero */

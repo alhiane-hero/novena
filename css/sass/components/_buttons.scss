@@ -1,0 +1,32 @@
+button {
+    border: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+.bttn {
+    display: block;
+    width: fit-content;
+    padding: 0.85rem 1.85rem;
+    border-radius: $radius;
+    color: $whiteColor;
+    transition: all $duration ease-in-out;
+}
+
+.main-btn {
+    background-color: $secondaryColor;
+    &:hover {
+        background-color: $mainColor;
+        color: $whiteColor;
+    }
+}
+
+.secondary-btn {
+    background-color: $mainColor;
+    &:hover {
+        background-color: $secondaryColor;
+        color: $whiteColor;
+    }
+}

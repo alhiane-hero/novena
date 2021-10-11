@@ -1,0 +1,90 @@
+/* start header */
+header {
+    position: relative;
+    .up-bar {
+        text-align: center;
+        background-color: $mainColor;
+        @include downUpPadding(15px);
+        .email-adress-list {
+            display: flex;
+            @include extraSmallQuery {
+                flex-direction: column;
+            }
+            li {
+                margin-top: 0.5rem;
+                font: {
+                    size: $defaultFont - 2;
+                    weight: 100;
+                }
+                color: #fff;
+                &:not(:last-of-type) {
+                    margin: 0 20px 0 0;
+                }
+                i {
+                    margin: 0 5px 0 0;
+                }
+            }
+        }
+        .call {
+            font: {
+                size: $defaultFont - 2;
+                weight: 300;
+            }
+            color: #fff;
+            span {
+                font-size: $defaultFont + 2;
+                letter-spacing: 1px;
+            }
+        }
+    }
+    .bottom-bar {
+        .navbar-brand {
+            margin-right: 0 !important;
+        }
+        .navbar-expand-lg .navbar-collapse {
+            @include mediumQuery {
+                justify-content: flex-end;
+            }
+        }
+        .navbar-light {
+            .navbar-nav .nav-link {
+                font: {
+                    family: "Exo", sans-serif;
+                    weight: 600;
+                }
+                letter-spacing: 1px;
+                color: $blackColor;
+                padding: 10px 15px;
+                &::after {
+                    display: none;
+                }
+            }
+            .navbar-toggler:focus {
+                box-shadow: 0 0 0 0.25rem #e12454;
+            }
+        }
+        .dropdown-menu {
+            padding: 0;
+            border: none;
+            border-top: 5px solid #e12454;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            li {
+                &:not(:last-of-type) {
+                    .dropdown-item {
+                        border-bottom: 1px solid #eee;
+                    }
+                }
+                .dropdown-item {
+                    text-align: $text-left;
+                    padding: 13px 20px;
+                    transition: color $duration ease-in-out;
+                    &:hover {
+                        background-color: transparent;
+                        color: #e12454;
+                    }
+                }
+            }
+        }
+    }
+}
+/* end header */

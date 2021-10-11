@@ -1,0 +1,281 @@
+/* start banner */
+.banner {
+    position: relative;
+    min-height: 100vh;
+    padding: 80px 0 160px;
+    background: $whiteColor;
+    @include smallQuery {
+        @include imgBg("../img/bg/slider-bg-1.jpg");
+    }
+    .block {
+        position: relative;
+        z-index: 2;
+        h1 {
+            font: {
+                size: 50px;
+                weight: 600;
+            }
+            color: #223a66;
+            line-height: 70px;
+            @include smallQuery {
+                font-size: 60px;
+                line-height: 1.2;
+            }
+        }
+    }
+}
+/* end banner */
+
+/* start features */
+.features {
+    position: relative;
+    margin-top: -70px;
+    .features-block {
+        @include largeQuery {
+            display: flex;
+        }
+        .feat {
+            flex-basis: 33.333333%;
+            padding: 40px 30px;
+            margin: 0 10px;
+            background-color: $whiteColor;
+            box-shadow: 0px 0px 30px 0px rgba(0, 42, 106, 0.1);
+            border-radius: $mainRadius;
+            .feat-icon {
+                i {
+                    font-size: 50px;
+                    color: $mainColor;
+                }
+            }
+            .sm-heading {
+                font: {
+                    size: $defaultFont;
+                    weight: 400;
+                }
+                line-height: 1.6;
+            }
+            .lg-heading {
+                font-size: 18px;
+                color: $mainColor;
+            }
+            ul {
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 6px 0px;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                }
+            }
+        }
+    }
+}
+/* end features */
+
+/* start statistics */
+.statistics {
+    position: relative;
+    z-index: 9999;
+    margin-bottom: -80px;
+    .block {
+        background-color: $mainColor;
+        .counter-stat {
+            position: relative;
+            padding: 55px 0px 40px 0px;
+            text-align: center;
+            i {
+                position: absolute;
+                inset: 0;
+                z-index: 1;
+                font-size: 70px;
+                transform: translateY(25px);
+                color: rgba(255, 255, 255, 0.06);
+            }
+            .number {
+                margin-bottom: 5px;
+                span {
+                    position: relative;
+                    z-index: 2;
+                    font: {
+                        family: "Exo", sans-serif;
+                        size: 70px;
+                        weight: 700;
+                    }
+                    color: $whiteColor;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+/* end statistics */
+
+/* start services */
+.services {
+    position: relative;
+    padding: 180px 0 100px !important;
+    background-color: #f4f9fc;
+    .service-item {
+        padding: 30px;
+        background-color: $whiteColor;
+        border-radius: $mainRadius;
+        .head {
+            display: flex;
+            align-items: center;
+            i {
+                font-size: 50px;
+                color: $secondaryColor;
+            }
+            h3 {
+                font-size: 1.3rem;
+                color: $mainColor;
+                line-height: 1.2;
+                padding: 0 0 0 20px;
+            }
+        }
+    }
+}
+/* end services */
+
+/* start appoinment */
+.appoinment {
+    .appoinment-img {
+        position: relative;
+        img {
+            width: 85%;
+            height: auto;
+            @include extraSmallQuery {
+                width: 100%;
+            }
+        }
+        .appoinment-phone {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            padding: 48px;
+            background-color: $mainColor;
+            @include extraSmallQuery {
+                padding: 24px;
+            }
+            h2 {
+                font-size: 60px;
+                letter-spacing: 1px;
+                color: $whiteColor;
+                @include extraSmallQuery {
+                    font-size: 30px;
+                }
+                i {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+            }
+        }
+    }
+    .appoinment-text {
+        form {
+            input,
+            select,
+            textarea {
+                width: 100%;
+                height: 50px;
+                padding: 0.375rem 0.75rem;
+                border: 1px solid #ced4da;
+                background-color: #f4f9fc;
+                font-size: 0.9rem;
+                font-weight: 400;
+                line-height: 1.5;
+                color: #495057;
+            }
+            input:focus,
+            select:focus,
+            textarea:focus {
+                outline: none;
+            }
+            textarea {
+                height: 120px;
+                resize: vertical;
+            }
+        }
+    }
+}
+/* end appoinment */
+
+/* start testimonials */
+.testimonials {
+    position: relative;
+    background-color: #f4f9fc;
+    .swiper {
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper {
+            position: relative;
+            padding-bottom: 50px;
+            .swiper-slide {
+                font-size: 18px;
+                background: #fff;
+                padding: 30px;
+                .user {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 1.5rem;
+                    .img {
+                        width: 80px;
+                        height: 80px;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        border: 5px solid #eff0f3;
+                        margin: 0 0 0.7rem 0;
+                    }
+                    .text {
+                        h4 {
+                            font-size: 1.3rem;
+                            color: $blackColor;
+                            margin: 0;
+                        }
+                        span {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+                p {
+                    margin-bottom: 1.5rem;
+                }
+                i {
+                    position: absolute;
+                    bottom: -20px;
+                    right: 46px;
+                    font-size: 60px;
+                    color: $secondaryColor;
+                    opacity: 0.3;
+                }
+            }
+        }
+        .swiper-slide {
+            position: relative;
+            font-size: 18px;
+            background: #fff;
+            padding: 30px;
+        }
+    }
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 90px !important;
+        .swiper-pagination-bullet {
+            width: 5px;
+            height: 5px;
+            margin: 0 7px !important;
+            background-color: black;
+            opacity: 0.25;
+            &.swiper-pagination-bullet-active {
+                opacity: 0.7 !important;
+            }
+        }
+    }
+}
+/* end testimonials */
+
+/* start clients */
+.clients {
+    position: relative;
+    .swiper2 {
+        overflow: hidden;
+    }
+}
+/* end clients */

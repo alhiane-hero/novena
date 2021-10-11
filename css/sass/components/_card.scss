@@ -1,0 +1,18 @@
+.card {
+    border: none;
+    .card-body {
+        padding: 0;
+        .title {
+            font-size: 1.3rem;
+            color: $mainColor;
+        }
+        .title-link {
+            font-size: 1.3rem;
+            color: $mainColor;
+            transition: color $duration ease-in-out;
+            &:hover {
+                color: $secondaryColor;
+            }
+        }
+    }
+}
